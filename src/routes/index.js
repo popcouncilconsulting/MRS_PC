@@ -52,7 +52,7 @@ class Routes extends Component {
 
   render() {
     return (<ProfileProvider value={this.state.user}>
-      <Router hisotry={history}>
+      <Router basename="/MRS_PC" hisotry={history}>
         <Layout authed={this.state.authed}>
           <Switch>
             {routes.map((route, i) => {
